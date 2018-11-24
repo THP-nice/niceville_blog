@@ -42,6 +42,8 @@ gem 'bootstrap', '4.0.0.alpha3'
 gem 'friendly_id', '~> 5.2.0' # Note: You MUST use 5.0.0 or greater for Rails 4.0+
 gem 'devise'
 gem 'annotate'
+gem 'acts-as-taggable-on', '~> 4.0'
+gem 'will_paginate', '~> 3.1.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

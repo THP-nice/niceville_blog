@@ -16,6 +16,7 @@
 #
 
 class Post < ApplicationRecord
+  has_many :tags, class_name: 'ActsAsTaggableOn::Tag'
 
   extend FriendlyId
   friendly_id :title, use: :slugged
@@ -30,7 +31,11 @@ class Post < ApplicationRecord
   end
 
   def display_day_published
-    "Published #{published_at.strftime('%-b %-d, %Y')}"
+    if published_at.present?
+      "Published #{published_at.strftime('%-b %-d, %Y')}"
+    else
+      "Not published yet"
+    end
   end
 
   def publish
