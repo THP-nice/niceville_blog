@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield(:page_title) %> | Blog Niçois</title>
+    <title><%= yield(:page_title) %> | FrogBlog</title>
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700|Montserrat:300,400,700" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -12,6 +11,7 @@
   <body>
     <%= render 'layouts/navbar' %>
     <div class="container <%= controller_name %> <%= action_name %>">
-    <%= yield %>
+      <%= yield %>
+    </div>
   </body>
 </html>
