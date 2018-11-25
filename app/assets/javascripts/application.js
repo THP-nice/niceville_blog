@@ -21,9 +21,10 @@
 document.addEventListener("turbolinks:load", function() {
   tinymce.remove();
   tinymce.init({
-  	height: '475',
     selector: 'textarea#post_body',
-    plugins: "codesample image media link advcode emoticons table",
-    toolbar: "undo redo | styleselect | bold italic  underline strikethrough link | codesample image media | code emoticons"
+    branding: false,
+  	height: 800,
+    plugins: 'print preview fullpage powerpaste searchreplace autolink directionality advcode visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists textcolor wordcount a11ychecker imagetools contextmenu colorpicker textpattern help emoticons',
+    toolbar: 'undo redo | styleselect | bold italic underline strikethrough forecolor backcolor | alignleft aligncenter alignright alignjustify | numlist bullist outdent indent | removeformat | link image media | codesample code | emoticons'
   });
 })
