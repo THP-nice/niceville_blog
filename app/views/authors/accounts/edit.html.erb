@@ -12,8 +12,14 @@
           <ul class="list-group list-group-flush">    
             <li class="list-group-item">
               <div class="field">
-                <%= f.label :name %>
-                <%= f.text_field :name, value: current_author.name, class: 'form-control' %>
+                <%= f.label :first_name %>
+                <%= f.text_field :first_name, value: current_author.first_name, class: 'form-control' %>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="field">
+                <%= f.label :last_name %>
+                <%= f.text_field :last_name, value: current_author.last_name, class: 'form-control' %>
               </div>
             </li>
             <li class="list-group-item">
