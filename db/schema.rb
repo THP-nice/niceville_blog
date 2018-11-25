@@ -15,8 +15,9 @@ ActiveRecord::Schema.define(version: 2018_11_25_094511) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "authors", id: :serial, force: :cascade do |t|
-    t.string "name"
+  create_table "authors", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
@@ -41,13 +42,13 @@ ActiveRecord::Schema.define(version: 2018_11_25_094511) do
     t.index ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type"
   end
 
-  create_table "posts", id: :serial, force: :cascade do |t|
+  create_table "posts", force: :cascade do |t|
     t.string "title"
     t.text "body"
     t.text "description"
     t.string "slug"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.string "banner_image_url"
     t.integer "author_id"
     t.boolean "published", default: false

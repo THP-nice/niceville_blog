@@ -26,14 +26,13 @@ class Author < ApplicationRecord
 
   def change_password(attrs)
     update(password: attrs[:new_password], password_confirmation: attrs[:new_password_confirmation])
-  end 	
-end
-
-
-def display_name
-  if name.present?
-    name
-  else
-    "Author"
-  end      
+  end
+  
+  def display_name
+    if first_name.present?
+      first_name
+    else
+      "Author"
+    end
+  end
 end  
