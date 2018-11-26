@@ -10,6 +10,9 @@
       width: 100%;
       background-size: cover;
       background-position: center;
+      &:hover {
+        opacity: 0.8;
+      }
     }
     .card-block {
       padding: 10px;

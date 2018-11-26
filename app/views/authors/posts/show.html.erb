@@ -1,12 +1,12 @@
 <% provide(:page_title, @post.title) %>
 <% provide(:author, 'active') %>
 
-<div>
+<div class="smaller-btns text-center" style="margin-bottom: 50px;">
   <%= link_to 'Edit', edit_authors_post_path(@post), class: 'btn btn-sm btn-warning' %>
   <%= link_to 'Remove', authors_post_path(@post), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-danger' %>
 </div>
 
-<div class="row">
+<div class="row d-flex justify-content-center">
   <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 text-xs-center">
     <h1><%= @post.title %></h1>
     <p><%= @post.display_day_published %></p>
