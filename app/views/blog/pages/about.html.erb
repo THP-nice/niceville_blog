@@ -4,23 +4,39 @@
 
  <div id="about" style="padding:20px 20px 0 20px; text-align: center; margin-top: 50px;">
     <h1>About our team</h1>
-  </div>
-  <div class="card"><%= image_tag("pic.jpg",  alt: "", class: "nikitapic") %>
-    <h2>Nikita Vasilev</h2>
-    <p class="title">Full Stack Developer</p>
-    <p>Session 6<br>The Hacking Project</p>
-    <a href="https://www.linkedin.com/in/nikita-vasilev-2b0112111/"><i class="fa fa-github"></i></a> 
-    <a href="https://github.com/nikitavasilev"><i class="fa fa-linkedin"></i></a> 
-    <p><button><a href="mailto:vassilev.nikita@gmail.com"
-      style="color: #fff; font-size: 18px;">Contact</a></button></p> 
 </div>
 
-<div class="card"><%= image_tag("nat.jpg",  alt: "", class: "natpic") %>
-    <h2>Nathaniel Debache</h2>
-    <p class="title">Full Stack Developer</p>
-    <p>Session 6<br>The Hacking Project</p>
-    <a href="https://www.linkedin.com/in/nathaniel-debache-06714159//"><i class="fa fa-github"></i></a> 
-    <a href="https://github.com/Natdenice"><i class="fa fa-linkedin"></i></a> 
-    <p><button><a href="mailto:Nathaniel.debache@gmail.com"
-      style="color: #fff; font-size: 18px;">Contact</a></button></p> 
+<div class="row justify-content-center">
+  <div class="col-lg-4 col-sm-12">
+    <div class="card">
+      <div class="crop">
+        <%= image_tag("pic.jpg", alt: "Profile picture") %>
+      </div>
+      <h2>Nikita Vasilev</h2>
+      <p class="title">Full Stack Developer</p>
+      <p>Session 6<br>The Hacking Project</p>
+      <div class="icons">
+        <a href="https://www.linkedin.com/in/nikita-vasilev-2b0112111/"><i class="fab fa-github"></i></a>
+        <a href="https://github.com/nikitavasilev"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p><button><a href="mailto:vassilev.nikita@gmail.com"
+        style="color: #fff; font-size: 18px;">Contact</a></button></p> 
+    </div>
+  </div>
+  <div class="col-lg-4 col-sm-12">
+    <div class="card">
+      <div class="crop">
+        <%= image_tag("nat.jpg", alt: "Profile picture") %>
+      </div>
+      <h2>Nathaniel Debache</h2>
+      <p class="title">Full Stack Developer</p>
+      <p>Session 6<br>The Hacking Project</p>
+      <div class="icons">
+        <a href="https://www.linkedin.com/in/nathaniel-debache-06714159//"><i class="fab fa-github"></i></a>
+        <a href="https://github.com/Natdenice"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p><button><a href="mailto:Nathaniel.debache@gmail.com"
+        style="color: #fff; font-size: 18px;">Contact</a></button></p> 
+    </div>
+  </div>
 </div>

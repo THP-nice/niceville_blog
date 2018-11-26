@@ -63,7 +63,7 @@
     color: rgba(255, 255, 255, 0.5);
     font-family: 'Titillium Web', sans-serif;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 20px;
   }
   #mainNav .nav-link {
     -webkit-transition: none;
@@ -75,6 +75,9 @@
     color: rgba(255, 255, 255, 0.75);
   }
   #mainNav .nav-link:active {
+    color: white;
+  }
+  #mainNav .nav-link.active {
     color: white;
   }
   #mainNav.navbar-shrink {
@@ -100,7 +103,7 @@
     color: #467370;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #64a19d!important;
     outline: none;
     border-bottom: 0.25rem solid #64a19d;
   }
