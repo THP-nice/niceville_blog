@@ -1,6 +1,10 @@
 module Authors
   class AccountsController < AuthorController
 
+    def new
+      
+    end
+
     def edit
 
     end

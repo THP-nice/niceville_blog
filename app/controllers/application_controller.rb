@@ -1,9 +1,9 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
-  layout 'author'
-
   before_action :configure_permitted_parameters, if: :devise_controller?
+
+  layout 'author'
 
   protected
 
