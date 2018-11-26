@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield(:page_title) %> | Blogniçois</title>
+    <title><%= yield(:page_title) %> | Stack Overnice</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://devpreview.tiny.cloud/demo/tinymce.min.js"></script>
   </head>
 
-  <body>
+  <body id="page-top">
     <%= render 'layouts/navbar' %>
     <div class="container <%= controller_name %> <%= action_name %>">
 
@@ -23,8 +22,9 @@
           </div>
         <% end %>
       <% end %>
-
       <%= yield %>
     </div>
+    <%= render 'layouts/footer' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>

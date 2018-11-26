@@ -38,12 +38,15 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'jquery-rails'
 gem 'popper_js', '~> 1.14.5'
-gem 'bootstrap', '4.0.0.alpha3'
+gem 'bootstrap', '~> 4.1', '>= 4.1.3'
+gem 'font-awesome-sass', '~> 5.5', '>= 5.5.0.1'
+gem 'jquery-easing-rails', '~> 0.0.2'
 gem 'friendly_id', '~> 5.2.0' # Note: You MUST use 5.0.0 or greater for Rails 4.0+
 gem 'devise'
 gem 'annotate'
 gem 'acts-as-taggable-on', '~> 6.0'
 gem 'will_paginate', '~> 3.1.0'
+gem 'devise-bootstrap-views', '~> 1.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

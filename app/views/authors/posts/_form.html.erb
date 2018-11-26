@@ -19,7 +19,7 @@
           <h4 class="card-title">Nouvel article</h4>
         <% else %>
         <h4 class="card-title">
-        <b>Editer</b>
+        <b>Edit</b>
         <span class="thin-text"><%= @post.title %></span> 
         </h4>
         <% end %> 
@@ -51,7 +51,7 @@
           </li>
           <li class="list-group-item">
               <div class="actions">
-                <%= form.submit "Enregistrer l'article", class: 'btn btn-success btn-block' %>
+                <%= form.submit "Save post", class: 'btn btn-success btn-block' %>
               </div>  
             </li>    
           </ul>   

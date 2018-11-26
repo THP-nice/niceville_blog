@@ -1,5 +1,12 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   background-color: $light-gray;
+  margin-top: 150px;
+  margin-bottom: 200px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -9,7 +16,6 @@ h1, h2, h3, h4, h5, h6, p {
 h1, .card-title {
   font-weight: bold;
 }
-
 
 h6 {
   color: $secondary-text-color;
