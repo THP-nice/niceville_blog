@@ -1,17 +1,22 @@
 .posts.index {
   .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border: none;
     border-radius: 0;
     height: 400px;
     margin-bottom: 20px;
     background-color: white;
+    &:hover {
+      box-shadow: 10px 8px 42px 0 rgba(48, 50, 50, 0.51);
+      transition: 0.5s;
+    }
     .card-topper {
       height: 200px;
       width: 100%;
       background-size: cover;
       background-position: center;
       &:hover {
-        opacity: 0.8;
+        opacity: 0.9;
       }
     }
     .card-block {

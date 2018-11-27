@@ -20,7 +20,7 @@
 
 /**********ABOUT US CARD**********/
 
-.card {
+.about-card .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
@@ -28,12 +28,12 @@
   margin-top: 50px;
 }
 
-.title {
+.about-card .title {
   color: grey;
   font-size: 18px;
 }
 
-.card button {
+.about-card .card button {
   border: none;
   outline: 0;
   display: inline-block;
@@ -46,26 +46,26 @@
   font-size: 18px;
 }
 
-.card a {
+.about-card .card a {
   text-decoration: none;
   font-size: 22px;
   color: black;
 }
 
-.card button:hover, a:hover {
+.about-card .card button:hover, a:hover {
   opacity: 0.7;
 }
 
-.card {
+.about-card .card {
   border-radius: 15px;
 }
 
-.card:hover {
+.about-card .card:hover {
   box-shadow: 10px 8px 42px 0 rgba(48, 50, 50, 0.51);
   transition: 0.5s;
 }
 
-.card img {
+.about-card .card img {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
 }
@@ -83,7 +83,7 @@
   height: auto;
 }
 
-.card h2 {
+.about-card .card h2 {
   font-family: 'Montserrat', sans-serif;
   display: block;
   font-size: 1.5em;
@@ -94,7 +94,7 @@
   font-weight: bold;
 }
 
-.card p {
+.about-card .card p {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   display: block;
